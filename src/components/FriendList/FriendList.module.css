@@ -1,19 +1,35 @@
 .container {
-  display: flex; /* Включає Flexbox */
-  justify-content: space-between; /* Розподіляє простір між елементами */
-  align-items: stretch; /* Розтягує елементи по висоті контейнера */
-  gap: 10px; /* Відстань між елементами (можна прибрати або змінити) */
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
   overflow: hidden;
+  gap: 10px;
+  list-style: none;
 }
+
 .box {
   flex: 1; /* Кожен елемент займає рівну частину простору контейнера */
-
-  padding: 80px 20px 20px 20px; /* Відступи всередині елементів */
+  display: flex;
+  flex-direction: column;
+  padding: 80px 10px 20px 20px; /* Відступи всередині елементів */
   box-sizing: border-box; /* Включає обводку і відступи в розмір елемента */
   text-align: center; /* Центрує текст всередині */
   border-radius: 10px;
   border: 2px solid rgb(0, 0, 0);
   background-color: white;
+}
+
+.box img {
+  width: 240px;
+  height: 240px; /* Можна задати висоту, щоб зберегти пропорції */
+  border-radius: 50%; /* Робить зображення круглим */
+  margin-bottom: 20px; /* Відступ між зображенням і текстом */
+}
+
+.name {
+  font-weight: bold;
+  font-size: 27px;
+  margin-bottom: 10px; /* Відступ між ім'ям і статусом */
 }
 
 .isActive {
