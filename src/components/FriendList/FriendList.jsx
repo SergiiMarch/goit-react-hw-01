@@ -14,7 +14,9 @@ export default function FriendsList({ friends }) {
           >
             Name: {name}
           </p>
-          <p>isOnline: {isOnline ? "Yes" : "No"}</p>
+          <p className={isOnline ? styles.isActive : styles.isRetired}>
+            isOnline: {isOnline ? "Online" : "Offline"}
+          </p>
         </div>
       ))}
     </div>

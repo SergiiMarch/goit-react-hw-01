@@ -15,3 +15,11 @@
   border: 2px solid rgb(0, 0, 0);
   background-color: white;
 }
+
+.isActive {
+  color: green;
+}
+
+.isRetired {
+  color: orangered;
+}
