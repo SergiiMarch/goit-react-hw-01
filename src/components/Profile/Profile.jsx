@@ -14,20 +14,32 @@ export default function Profile({
       <div className={styles.container}>
         <div className={styles.profileInfo}>
           <img src={avatar} alt="User avatar" className={styles.picture} />
-          <p>{username}</p>
-          <p>@{tag}</p>
-          <p>{location}</p>
+          <p
+            style={{
+              fontWeight: "bold",
+              fontSize: "27px",
+              marginBottom: "20px",
+            }}
+          >
+            {username}
+          </p>
+          <p style={{ color: "rgba(128, 128, 128, 0.8)", marginBottom: "0" }}>
+            @{tag}
+          </p>
+          <p style={{ color: "rgba(128, 128, 128, 0.8)", marginBottom: "0" }}>
+            {location}
+          </p>
         </div>
         <ul className={styles.items}>
-          <li>
+          <li className={styles.item}>
             <span className={styles.label}>Followers</span>
             <span className={styles.value}>{followers}</span>
           </li>
-          <li>
+          <li className={styles.item}>
             <span className={styles.label}>Views</span>
             <span className={styles.value}>{views}</span>
           </li>
-          <li>
+          <li className={styles.item}>
             <span className={styles.label}>Likes</span>
             <span className={styles.value}>{likes}</span>
           </li>
